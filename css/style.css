@@ -1,0 +1,207 @@
+@import 'utility.css';
+/* Assigning variables to the colors used*/
+:root{
+    --c1:#efc997;
+    --c2:#140201;
+    --c3:#6b676a;
+    --c4:#d6d2d0;
+    }
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin:0 auto;
+}
+
+.logo img{
+    max-width: 100px;
+
+}
+
+.links a{
+    color: var(--c4);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.links a:hover {
+    color: var(--c1);
+}
+
+header{
+    background: var(--c2);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 85%, 0 100% );
+    
+}
+/*.header{
+    background-image: url('./Images/background.png');
+}*/
+header nav{
+    padding: 2rem;
+}
+ header nav.logo{
+     margin-right: 3rem;
+ }
+
+ 
+ .intro .right{
+     color: var(--c4);
+     margin-top: 8rem;
+     margin-bottom: 4rem;
+ }
+ .intro .right h1{
+     font-size: 5rem;
+     font-weight: 100;
+     line-height: 1.2;  
+     margin-bottom: 2rem; 
+ }
+ .intro .right h1 span{
+     color: var(--c1);
+ }
+ .intro .right p{
+     line-height: 1.9;
+     margin-bottom: 2rem;
+     
+ }
+
+ .section-heading{
+     color: var(--c2);
+     text-align:center;
+     margin-bottom: 6rem;
+     font-size: 3rem;
+     font-weight: bold;
+     line-height: 1.2; 
+     
+ }
+ 
+ /*section.Education{
+     background: var(--c1);
+ }*/
+ section.Education .card-wrapper{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 2rem;
+     grid-row-gap: 2rem;
+ }
+ section.Education .card-wrapper .card{
+     background: var(--c1);
+     padding: 3rem 2rem;
+     position: relative;
+     padding-top: 3rem;
+     margin-bottom: 5rem;
+     text-align: center;
+     transition: all .5s ease;
+ }
+
+ section.Education .card-wrapper .card img{
+     position: absolute;
+     top: -3rem;
+     left: 50%;
+     transform: translateX(-50%);
+     background:var(--c1);
+     
+ }
+
+ section.Education .card-wrapper .card h2{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+ }
+ section.Education .card-wrapper .card h3{
+     font-family: 'Lato', sans-serif;
+     line-height: 1.6;
+     font-size: 1.5rem;
+ }
+ section.Education .card-wrapper .card:hover{
+     background: var(--c2);
+
+}
+ section.Education .card-wrapper .card:hover h2, section.Education .card-wrapper .card:hover h3{
+     color: var(--c1);
+ 
+}
+
+section.Working{
+    text-align: center;
+    letter-spacing: 0.4px;
+    word-spacing: 1.5px;
+    font-size: x-large;
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/background.png);
+    color: var(--c1);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 85%, 0 100% );
+    margin-bottom: 5rem;
+}
+section.Skills .section-heading{
+    padding-top: 3rem;
+    
+}
+section.Skills{
+    background: var(--c1);
+}
+section.Skills .card-wrapper .card{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/skill.png);
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+section.Education .card-wrapper .card h2{
+   font-weight: 600;
+   font-size: 2rem;
+   margin-bottom: 0.5rem;
+   color: var(--c1);
+}
+
+section.Education .card-wrapper .card:hover{
+    background: var(--c2);
+
+}
+section.Education .card-wrapper .card:hover h2, section.Education .card-wrapper .card:hover h3{
+    color: var(--c1);
+
+}
+
+footer{
+    background: var(--c2);
+    text-align: center;
+    padding: 3rem 0;
+}
+footer>img{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 2rem;
+}
+
+footer .footer-socials a{
+    margin-right: 1rem;
+}
+footer .footer-socials img{
+    background: var(--c1);
+    margin-bottom: 2rem;
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+
+  
+}
+footer .copyright{
+    color: var(--c1);
+    margin-bottom: 2rem;
+}
