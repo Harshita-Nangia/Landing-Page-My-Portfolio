@@ -6,121 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshita Nangia Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
- 
     <link rel="stylesheet" href="./css/style.css">
+   
 </head>
 <body>
-    <header>
-        <div class="container">
-        <nav class="flex items-center justify-between">
-            <div class="left flex items-center">
-                <div class="logo">
-                    <img src="./Images/logo.png" alt="logo">
-                </div>
-                <div class="links">
-                    <a href="#Education">Education</a>
-                    <a href="#Skills">Skills</a>
-                   <!-- <a href="=#">Projects</a> -->   
-                </div>
+    <!--    <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="./Images/circled-menu.png" alt="" height="60px" width="60px">
+        </button>
+        
+        <div class="mobile-nav">
+            <button class="close">
+                <img src="./Images/close.png" alt="" height="60px" width="60px">
+            </button>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Skills</a></li>
+            </ul>
+        </div>
+    -->
 
-            </div>
-            <div class="right">
-                <button class="btn btn-primary">Contact</button>
+        <header>
+            <div class="container">
+            <nav id="main-nav" class="flex items-center justify-between">
+                <div class="left flex items-center">
+                    <div class="logo">
+                        <img src="./Images/logo.png" alt="logo">
+                    </div>
+                    <div class="links">
+                        <a href="#About">About</a> 
+                        <a href="#Education">Education</a>
+                        <a href="#Skills">Skills</a>
+                        
+                    </div>
+    
+                </div>
+                <div class="right">
+                   <a href="#Contact"> <button class="btn btn-primary">Contact</button>
+                    </a>
+                </div>
+            </nav>
+            <div class="intro flex items-center justify-between" >
+    <!--
+                <div class="left flex-1 flex justify-center">
+                    <img src="./Images/img2.png" alt="star">
+                </div>
+    -->
+                <div class="right flex-1 justify-center" id="About">
+                    <h1>I'm <br><span> Harshita Nangia</span></h1>
+                    <p>
+                        I am an aspiring Software Engineer.
+                        I have completed my Bachelors in Information Technology from MPSTME NMIMS.
+                        I am passionate about Software Development.
+                        Most of my experience has been in Full-Stack Development and Machine learning.
+                        This is  the place where you can know more about me, my work etc.
+                    </p>
+                    <div>
+                        <a href="#" target="_blank"><button class="btn btn-secondary" >MY CV</button></a>
+                    </div>
+                </div>
                 
             </div>
-        </nav>
-        <div class="intro flex items-center justify-between" >
-<!--
-            <div class="left flex-1 flex justify-center">
-                <img src="./Images/img2.png" alt="star">
-            </div>
--->
-            <div class="right flex-1 justify-center">
-                <h1>I'm <br><span> Harshita Nangia</span></h1>
-                <p>
-                    I am an aspiring Software Engineer.
-                    I have completed my Bachelors in Information Technology from MPSTME NMIMS.
-                    I am passionate about Software Development.
-                    Most of my experience has been in Full-Stack Development and Machine learning.
-                    This is  the place where you can know more about me, my work etc.
-                </p>
-                <div>
-                    <a href="#" target="_blank"><button class="btn btn-secondary" >MY CV</button></a>
+        </header>
+        <section class="Education" id="Education">
+            <div class="container">
+                <h1 class="section-heading">My <span>Educational Background</span> </h1>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./Images/secondary school.png" height="80px" width="80px" alt="">
+                        <h2>Seconday</h2>
+                        <h3>Tagore Public School</h3>
+                        <h3>94%</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./Images/senior secondary school.png" height="80px" width="80px" alt="">
+                        <h2>Senior Seconday</h2>
+                        <h3>Tagore Public School</h3>
+                        <h3>80%</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./Images/graduation.png" height="80px" width="80px" alt="">
+                        <h2>Graduation</h2>
+                        <h3>NMIMS University</h3>
+                        <h3>Btech IT</h3>
+                        <h3>88%</h3>
+                    </div>
                 </div>
             </div>
-            
-        </div>
-    </header>
-    <section class="Education" id="Education">
-        <div class="container">
-            <h1 class="section-heading">My <span>Educational Background</span> </h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./Images/secondary school.png" height="80px" width="80px" alt="">
-                    <h2>Seconday</h2>
-                    <h3>Tagore Public School</h3>
-                    <h3>94%</h3>
-                </div>
-                <div class="card">
-                    <img src="./Images/senior secondary school.png" height="80px" width="80px" alt="">
-                    <h2>Senior Seconday</h2>
-                    <h3>Tagore Public School</h3>
-                    <h3>80%</h3>
-                </div>
-                <div class="card">
-                    <img src="./Images/graduation.png" height="80px" width="80px" alt="">
-                    <h2>Graduation</h2>
-                    <h3>NMIMS University</h3>
-                    <h3>Btech IT</h3>
-                    <h3>88%</h3>
+        </section>
+        <section class="Working">
+            <h1>I Am Currently Working in Quantiphi </h1>
+            <h2>Role: Intern Framework Engineer</h2>
+            <h2> Software Developer</h2>
+        </section>
+        <section class="Education Skills" id="Skills">
+            <div class="container">
+                <h1 class="section-heading">My <span>Skills</span> </h1>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <h2>Web Development</h2>
+                    </div>
+                    <div class="card">
+                        <h2>C++ Programming</h2>
+    
+                    </div>
+                    <div class="card">
+                        <h2>Python Programming</h2>
+                    </div>
+                    <div class="card">
+                        <h2>Java</h2>
+                    </div>
+                    <div class="card">
+                        <h2>Data Analytics</h2>
+    
+                    </div>
+                    <div class="card">
+                        <h2>MySQL</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="Working">
-        <h1>I Am Currently Working in Quantiphi </h1>
-        <h2>Role: Intern Framework Engineer</h2>
-        <h2> Software Developer</h2>
-    </section>
-    <section class="Education Skills" id="Skills">
-        <div class="container">
-            <h1 class="section-heading">My <span>Skills</span> </h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <h2>Web Development</h2>
-                </div>
-                <div class="card">
-                    <h2>C++ Programming</h2>
+        </section>
+        <footer id="Contact">
+            <img src="./Images/logo.png" alt="">
+            <div class="footer-socials">
+                <a href="#"><img src="./Images/phone.png" alt=""></a>
+                <a href="#"><img src="./Images/whatsapp.png" alt=""></a>
+                <a href="https://www.instagram.com/harshita_nangia/"><img src="./Images/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100012706059077"><img src="./Images/facebook.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/harshita-nangia-8544b7149" target="_blank"><img src="./Images/linkedin.png" alt=""></a>
+            </div>
+            <div class="copyright">
+                © 2020 Copyright: HARSHITA NANGIA. All Right Reserved
+            </div>
+        </footer>
 
-                </div>
-                <div class="card">
-                    <h2>Python Programming</h2>
-                </div>
-                <div class="card">
-                    <h2>Java</h2>
-                </div>
-                <div class="card">
-                    <h2>Data Analytics</h2>
-
-                </div>
-                <div class="card">
-                    <h2>MySQL</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <img src="./Images/logo.png" alt="">
-        <div class="footer-socials">
-            <a href="#"><img src="./Images/phone.png" alt=""></a>
-            <a href="#"><img src="./Images/whatsapp.png" alt=""></a>
-            <a href="#"><img src="./Images/instagram.png" alt=""></a>
-            <a href="#"><img src="./Images/facebook.png" alt=""></a>
-            <a href="#"><img src="./Images/linkedin.png" alt=""></a>
-        </div>
-        <div class="copyright">
-            © 2020 Copyright: HARSHITA NANGIA. All Right Reserved
-        </div>
-    </footer>
+    </div>
+    <!--
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>    
+    <script src="app.js"></script>
+    -->
 </body>
 </html>
