@@ -6,9 +6,11 @@
     --c3:#6b676a;
     --c4:#d6d2d0;
     }
-body{
+body,html{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    width: 100%;
+    overflow-x: hidden;
   
 }
 *{
