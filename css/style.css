@@ -1,5 +1,6 @@
 @import 'utility.css';
 /* Assigning variables to the colors used*/
+
 :root{
     --c1:#efc997;
     --c2:#250302;
@@ -10,8 +11,7 @@ body,html{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     width: 100%;
-    overflow-x: hidden;
-  
+    overflow-x: hidden;  
 }
 html{
     scroll-behavior: smooth;
@@ -31,7 +31,7 @@ html{
 }
 
 .logo img{
-    max-width: 100px;
+    max-width: 150px;
 
 }
 
@@ -41,6 +41,7 @@ html{
     margin-right: 2rem;
     text-transform: uppercase;
     transition: all 1s ease;
+    font-size: 1.5rem;
 }
 
 .links a:hover {
@@ -158,27 +159,28 @@ section.Skills .section-heading{
     padding-top: 3rem;
     
 }
+
 section.Skills{
     background: var(--c1);
 }
 section.Skills .card-wrapper .card{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/skill.png);
+    background: url(../Images/skill.png);
     margin-top: 0.5rem;
     margin-bottom: 2rem;
 }
 
-section.Education .card-wrapper .card h2{
+section.Skills .card-wrapper .card h2{
    font-weight: 600;
    font-size: 2rem;
    margin-bottom: 0.5rem;
    color: var(--c1);
 }
 
-section.Education .card-wrapper .card:hover{
+section.Skills .card-wrapper .card:hover{
     background: var(--c2);
 
 }
-section.Education .card-wrapper .card:hover h2, section.Education .card-wrapper .card:hover h3{
+section.Skills .card-wrapper .card:hover h2, section.Skills .card-wrapper .card:hover h3{
     color: var(--c1);
 
 }
@@ -210,3 +212,75 @@ footer .copyright{
     color: var(--c1);
     margin-bottom: 2rem;
 }
+
+/*
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+}
+*/
+
+/*
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: var(--c1);
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--c1);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.open{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.close{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    border: none;
+    background: var(--c1);
+    cursor: pointer;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav ul li a{
+    color: var(--c2);
+    text-decoration: none;
+    font-size: 2rem;
+}
+.mobile-nav ul li{
+    padding-bottom: 2rem;
+    font-family: sans-serif;
+
+}
+*/
